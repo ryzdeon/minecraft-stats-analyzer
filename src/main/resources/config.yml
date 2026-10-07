@@ -1,0 +1,37 @@
+# Configuration du plugin StatsAnalyzer
+
+# Base de données
+database:
+  type: sqlite # sqlite ou mysql
+  sqlite:
+    file: plugins/StatsAnalyzer/stats.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: minecraft_stats
+    username: root
+    password: password
+
+# API REST
+api:
+  enabled: true
+  port: 8080
+  host: 0.0.0.0
+  # Token optionnel pour sécuriser l'API
+  token: "your-secret-token-here"
+
+# Économie (Vault)
+economy:
+  enabled: true
+  track-transactions: true
+
+# Statistiques à tracker
+stats:
+  track-playtime: true
+  track-kills: true
+  track-deaths: true
+  track-blocks-broken: true
+  track-blocks-placed: true
+  track-distance: true
+  track-items-crafted: true
+  track-fish-caught: true

@@ -1,0 +1,26 @@
+name: StatsAnalyzer
+version: '1.0.0'
+main: fr.ryzdeon.statsanalyzer.StatsAnalyzerPlugin
+description: Plugin pour analyser les stats de joueurs et l'économie
+authors: [ Ryzdeon ]
+api-version: '1.26'
+depend: [ Vault ]
+
+commands:
+  stats:
+    description: Voir tes stats de joueur
+    usage: /stats [joueur]
+    aliases: [ mystats ]
+  topmoney:
+    description: Voir les joueurs les plus riches
+    usage: /topmoney
+    aliases: [ richest, topeconomy ]
+  topkills:
+    description: Voir les joueurs avec le plus de kills
+    usage: /topkills
+  topplaytime:
+    description: Voir les joueurs avec le plus de temps de jeu
+    usage: /topplaytime
+  statsapi:
+    description: Voir le statut de l'API
+    usage: /statsapi
